@@ -1,1 +1,1 @@
-web: gunicorn hexlet_code.wsgi
+web: gunicorn task_manager.wsgi:task_manager
