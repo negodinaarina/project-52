@@ -7,3 +7,5 @@ class User(AbstractBaseUser):
     last_name = models.CharField(max_length=40)
     email = models.EmailField(unique=True)
     created = models.DateTimeField(auto_now_add=True)
+
+    USERNAME_FIELD = 'email'
